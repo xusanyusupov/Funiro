@@ -1,0 +1,151 @@
+main{
+    .slid{
+        background-color: #FCF8F3;
+        width: 100%;
+        height: 670px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        .slid__wrap{
+            width: 100%;
+            display: grid;
+            overflow: hidden;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            grid-gap: 15px;
+            ////item 1
+            .slid__text{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                justify-content: center;
+                align-items: flex-start;
+                b{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                button{
+                    padding: 12px 36px;
+                    border-radius: 10px;
+                    background-color: #B98F31;
+                    color: #fff;
+                    border: 0;
+                    cursor: pointer;
+                }
+            }
+            ////item2
+            .slid__center-img{
+                position: relative;
+                img{
+                    width: 400px;
+                    height: 580px;
+                }
+                .slid__img-item{
+                    position: absolute;
+                    top: 75%;
+                    left: 10%;
+                    display: flex;
+                    align-items: flex-end;
+                    .slid__img-text{
+                        background: #FFFFFFB3;
+                        padding: 32px 30px;
+                    }
+                    button{
+                        padding: 15px;
+                        border: 0;
+                        background-color: #B98F31;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+            ////item3
+            .slid__scroll-item{
+                display: flex;
+                align-items: flex-start;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                gap: 15px;
+                height: 400px;
+                img{
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+.imgs{
+    img{
+        width: 100%;
+        -webkit-user-drag: none;
+        pointer-events: none;
+    }
+}
+
+// Skrollbarni butun sahifa yoki alohida konteyner uchun o'zgartirish
+::-webkit-scrollbar {
+    width: 12px; /* Skrollbar kengligi */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Skrollbar foni */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #B98F31; /* Rang */
+    border-radius: 10px; /* Burchaklarni yumaloqlash */
+    border: none; /* Skrollbar orasidagi bo'shliq */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Hover effekti */
+  }
+
+
+  @media (max-width:1000px) {
+    main{
+        .slid{
+            .container{
+                .slid__wrap{
+                    grid-template-columns: repeat(2,1fr);
+                    .slid__scroll-item{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }
+  @media (max-width:1000px) {
+    main{
+        .slid{
+            .container{
+                .slid__wrap{
+                    grid-template-columns: 1fr;
+                    .slid__text{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .slid__center-img{
+                        display: none;
+                    }
+                    .slid__scroll-item{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  @media (max-width:600px) {
+    .imgs{
+        display: none;
+    }
+  }

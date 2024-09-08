@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header start  -->
+    <header>
+        <nav>
+            <div class="header__container">
+                <div class="header__allItem-wrapper">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="./image/header__main-icon.svg" alt=""></a>
+                    </div>
+                    <div class="header__collection">
+                        <div class="header__links">
+                            <div class="header__links-items">
+                                <ul>
+                                    <li onclick="hideBAR()" class="media2XL">
+                                        <a href="#">
+                                            <span><i class="fa-solid fa-xmark"></i> close</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Shop</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>About</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__icon-wrapper">
+                        <a onclick="showBAR()" href="#" class="media2xl"><i class="fa-solid fa-bars"></i></a>
+                        <div class="header__icon">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="#"><i class="fa-solid fa-heart"></i></a>
+                            <a href="#" class="radius"><i class="fa-solid fa-bag-shopping"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end  -->
+
+    <!-- main start  -->
+    <main>
+        <!-- hero start  -->
+        <div class="hero">
+            <div class="header__container">
+                <div class="hero__item">
+                    <div class="hero__text">
+                    <p>New Arrival</p>
+                    <h1>Discover Our <br> New Collection</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                    <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero end  -->
+        <div class="container">
+            <div class="title__row">
+                <b>Browse The Range</b>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- top card start  -->
+            <div class="top__card">
+                <div class="top__card-item">
+                    <img src="./image/browse__img-01.jpg" alt="">
+                    <b class="title">Dining</b>
+                    <button class="btn__more">More</button>
+                </div>
+                <div class="top__card-item">
+                    <img src="./image/browse__img-02.jpg" alt="">
+                    <b class="title">Living</b>
+                    <button class="btn__more">More</button>
+                </div>
+                <div class="top__card-item">
+                    <img src="./image/browse__img-03.jpg" alt="">
+                    <b class="title">Bedroom</b>
+                    <button class="btn__more">More</button>
+                </div>
+            </div>
+            <!-- top card end  -->
+
+            <div class="main__card-wrapper">
+                <strong>Our Product</strong>
+                <div class="main__card-wrapper">
+                    <div class="card">
+                        <img src="./image/card1.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">30%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card2.jpg" alt="">
+                       <div class="paddB">
+                        <b>Leviosa</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.000.000</b>
+                            <del>Rp 1.500.000</del>
+                        </div>
+                        <b class="skidka">70%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card3.jpg" alt="">
+                       <div class="paddB">
+                        <b>Lolitto</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 1.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">75%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card4.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">14%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card5.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">10%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card6.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">30%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card7.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">60%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card1.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">30%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card2.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">30%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card3.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">60%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card4.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">30%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./image/card5.jpg" alt="">
+                       <div class="paddB">
+                        <b>Syltherine</b>
+                        <p>Stylish cafe chair</p>
+                       </div>
+                        <div class="between">
+                            <b>Rp 2.500.000</b>
+                            <del>Rp 3.500.000</del>
+                        </div>
+                        <b class="skidka">20%</b>
+                        <div class="oyna">
+                            <div class="item">
+                                <button>Add Card</button>
+                                <div>
+                                    <p><i class="fa-solid fa-share-nodes"></i>Share</p>
+                                    <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare</p>
+                                    <p><i class="fa-regular fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slid">
+           <div class="container">
+            <div class="slid__wrap">
+                <div class="slid__text">
+                    <b>50+ Beautiful rooms inspiration</b>
+                    <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+                    <button>Explore More</button>
+                </div>
+                <div class="slid__center-img">
+                    <img src="./image/Rectangle 24.png" alt="">
+                    <div class="slid__img-item">
+                        <div class="slid__img-text">
+                            <b>01--Bed Room</b> <br>
+                            <strong>Inner Peace</strong>
+                        </div>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="slid__scroll-item">
+                    <img src="/image/Rectangle 24.png" alt="">
+                    <img src="/image/Rectangle 24.png" alt="">
+                    <img src="/image/Rectangle 24.png" alt="">
+                    <img src="/image/Rectangle 24.png" alt="">
+                    <img src="/image/Rectangle 24.png" alt="">
+                    <img src="/image/Rectangle 24.png" alt="">
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <div class="imgs">
+            <img src="./image/Share.svg" alt="">
+        </div>
+    </main>
+    <!-- main enf  -->
+
+    <footer>
+       <div class="container">
+            <div class="footer__wrapper">
+                <div class="colum">
+                   <div class="footer__item">
+                    <b>Funiro</b>
+                    <p>400 University Drive Suite 200 Coral <br> Gables,<br>FL 33134 USA</p>
+                   </div>
+                </div>
+                <div class="colum">
+                  <div class="footer__item1">
+                    <b>Links</b>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="colum">
+                    <div class="footer__item2">
+                        <b>Help</b>
+                    <ul>
+                        <li>
+                            <a href="#">Payment Options</a>
+                        </li>
+                        <li>
+                            <a href="#">Returns</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policies</a>
+                        </li>
+                       
+                    </ul>
+                    </div>
+                </div>
+                <div class="colum">
+                    <b class="sbs">Newsletter</b>
+                    <div class="inpbtn">
+                        <input type="text" placeholder="Enter Your Email Address">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+      </footer>
+      
+
+<script src="app.js"></script>
+</body>
+</html>

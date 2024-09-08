@@ -1,0 +1,122 @@
+footer{
+    padding: 50px 0;
+    .container{
+        .footer__wrapper{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 90px;
+            .colum{
+                .footer__item{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    
+                    p{
+                        color: #9F9F9F;
+                    }
+                }
+            }
+            .colum{
+                .footer__item1{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 60px;
+                    b{
+                        color: #9F9F9F;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 45px;
+                       li{
+                        a{
+                            color: #000;
+                        }
+                       }
+                    }
+                }
+            }
+            .colum{
+                .footer__item2{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 60px;
+                        b{
+                            color: #9F9F9F;
+                        }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 45px;
+                            li{
+                                a{
+                                    color: #000;
+                                }
+                            }
+                        }
+                }
+            }
+            .colum{
+                display: flex;
+                flex-direction: column;
+                .sbs{
+                    color: #9F9F9F;
+                    padding-bottom: 60px;
+                }
+                .inpbtn{
+                    display: flex;
+                    gap: 10px;
+                    button,
+                    input{
+                        border: 0;
+                        outline: none;
+                        height: 40px;
+                    }
+
+                    input{
+                        border-bottom: 1px solid #000;
+                    }
+                    button{
+                        background-color: transparent;
+                        border-bottom: 1px solid #000;
+                        transition: .5s ease;
+                        cursor: pointer;;                
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1060px) {
+    footer{
+        .container{
+            .footer__wrapper{
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+                text-align: center;
+                .colum{
+                    border-top: 1px solid;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    footer{
+        .container{
+            .footer__wrapper{
+                grid-template-columns: 1fr;
+                justify-content: center;
+                text-align: center;
+                .colum{
+                    border-top: 1px solid;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

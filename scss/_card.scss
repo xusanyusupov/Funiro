@@ -1,0 +1,195 @@
+main{
+    .container{
+        .title__row{
+            padding: 62px 0;
+            text-align: center;
+            b{
+                font-size: 32px;
+            }
+            p{
+                color: #666666;
+                
+            }
+        }
+        .top__card{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 15px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .top__card-item{
+                text-align: center;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                height: 450px;
+                .btn__more{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    padding: 8px 16px;
+                    border-radius: 10px;
+                    background-color: #B98F31;
+                    border: 0;
+                    color: #fff;
+                    cursor: pointer;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    main{
+        .container{
+            .top__card{
+                .top__card-item{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1130px) {
+    main{
+        .container{
+            .top__card{
+                .top__card-item{
+                    width: 330px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1070px) {
+    main{
+        .container{
+            .top__card{
+                .top__card-item{
+                    width: 310px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:1000px) {
+    main{
+        .container{
+            .top__card{
+                .top__card-item{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 980px) {
+    main{
+        .container{
+            .top__card{
+                .top__card-item{
+                    width: 290px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 980px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(3,1fr);
+                .top__card-item{
+                    width: 290px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 950px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(3,1fr);
+                .top__card-item{
+                    width: 270px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(2,1fr);
+                .top__card-item{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 880px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(2,1fr);
+                .top__card-item{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(2,1fr);
+                .top__card-item{
+                    width: 340px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 730px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(2,1fr);
+                .top__card-item{
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 690px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: repeat(2,1fr);
+                .top__card-item{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    main{
+        .container{
+            .top__card{
+                grid-template-columns: 1fr;
+                .top__card-item{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
